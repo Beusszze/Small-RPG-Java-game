@@ -1,6 +1,6 @@
 package fr.m2i;
 
-public class Personnage {
+public class Personnage extends AbstractCombattant{
 	
 	
 	/**
@@ -10,11 +10,8 @@ public class Personnage {
 	 */
 	
 
-	// Attributs 
+	// Attributs identiques à la classe parent
 	
-	private int pointsDeVie;
-	private int degats;
-	private String nom;
 	
 	// Constructeurs
 	
@@ -23,47 +20,12 @@ public class Personnage {
 		super ();
 	}
 
-	public Personnage(int pointsDeVie, int degats, String nom) {
-		super();
-		this.pointsDeVie = pointsDeVie;
-		this.degats = degats;
-		this.nom = nom;
+	public Personnage(String nom, int pointsDeVie, int degats) {
+		super(nom, pointsDeVie, degats);
 	}
 
-
+ 
 	
-	// Getters et setters
-	
-	
-	
-	public int getPointsDeVie() {
-		return pointsDeVie;
-	}
-
-	public void setPointsDeVie(int pointsDeVie) {
-		this.pointsDeVie = pointsDeVie;
-	}
-
-	public int getDegats() {
-		return degats;
-	}
-
-	public void setDegats(int degats) {
-		this.degats = degats;
-	}
-
-	public String getNom() {
-		return nom;
-	}
-
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-	@Override
-	public String toString() {
-		return "Personnage [nom= " + this.nom + ", pointsDeVie=" + this.pointsDeVie + ", degats=" + this.degats + "]";
-	}
 	
 	
 	
